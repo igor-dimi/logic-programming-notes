@@ -4,10 +4,14 @@ title: "Reading List"
 
 ## Prolog
 
-* some books
-* other stuff
-* another book
-* yet another one
-* one book
-* one more
-* one more
+* Logic Programming with Prolog (2nd ed). Max Bramer
+* Programming in Prolog. Clocksin, Mellish
+* Computing with Logic - Logic Programming with Prolog. Maier, Warren
+* Prolog Programming for Artificial Intelligence. Bratko
+
+## Logic Programming
+
+* An Introduction to Logic Programming Through Prolog. Michael Spivey
+* From Logic Programming to Prolog. Krzysztof R Apt
+* From Logic to Logic Programming. Kees Doets
+* Foundations of Logic Programming. Lloyd
