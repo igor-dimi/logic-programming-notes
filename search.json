@@ -24,7 +24,17 @@
     "href": "reading.html#prolog",
     "title": "1  Reading List",
     "section": "",
-    "text": "some books\nother stuff\nanother book\nyet another one\none book\none more\none more",
+    "text": "Logic Programming with Prolog (2nd ed). Max Bramer\nProgramming in Prolog. Clocksin, Mellish\nComputing with Logic - Logic Programming with Prolog. Maier, Warren\nProlog Programming for Artificial Intelligence. Bratko",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Reading List</span>"
+    ]
+  },
+  {
+    "objectID": "reading.html#logic-programming",
+    "href": "reading.html#logic-programming",
+    "title": "1  Reading List",
+    "section": "1.2 Logic Programming",
+    "text": "1.2 Logic Programming\n\nAn Introduction to Logic Programming Through Prolog. Michael Spivey\nFrom Logic Programming to Prolog. Krzysztof R Apt\nFrom Logic to Logic Programming. Kees Doets\nFoundations of Logic Programming. Lloyd",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Reading List</span>"
     ]
