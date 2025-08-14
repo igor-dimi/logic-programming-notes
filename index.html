@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d558773541b75318fdba2db46f940219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-bf132de45b538d253cd2e2da5fec6016.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -99,6 +99,9 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Logic Programming</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Logic-Programming.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -147,7 +150,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <ul class="collapse">
+  <li><a href="#two-points-define-a-line" id="toc-two-points-define-a-line" class="nav-link" data-scroll-target="#two-points-define-a-line">Two points define a line</a></li>
+  <li><a href="#my-first-p5.js-sketch" id="toc-my-first-p5.js-sketch" class="nav-link" data-scroll-target="#my-first-p5.js-sketch">My First p5.js Sketch</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -189,8 +196,49 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="unnumbered">Preface</h1>
 <p>This is a Quarto book.</p>
 <p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<section id="two-points-define-a-line" class="level2">
+<h2 class="anchored" data-anchor-id="two-points-define-a-line">Two points define a line</h2>
+<p>In HTML, drag the points; in PDF, see the static figure.</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph@1.8.0/distrib/jsxgraph.css">
+<script src="https://cdn.jsdelivr.net/npm/jsxgraph@1.8.0/distrib/jsxgraphcore.js"></script>
+<div id="jxg" class="jxgbox" style="width:420px;height:320px">
+
+</div>
+<script>
+  const brd = JXG.JSXGraph.initBoard('jxg', { boundingbox: [-5,5,5,-5], axis: true });
+  const A = brd.create('point', [1,2], { name: 'A' });
+  const B = brd.create('point', [-2,-1], { name: 'B' });
+  brd.create('line', [A, B]);
+</script>
+</section>
+<section id="my-first-p5.js-sketch" class="level2">
+<h2 class="anchored" data-anchor-id="my-first-p5.js-sketch">My First p5.js Sketch</h2>
+<div class="{=html}">
+<!-- p5.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.min.js"></script>
+<!-- Container for the sketch -->
+<div id="p5-container">
+
+</div>
+<script>
+// p5.js sketch as an inline instance mode
+new p5(function(p) {
+  p.setup = function() {
+    let canvas = p.createCanvas(400, 200);
+    canvas.parent("p5-container"); // attach to our div
+    p.background(220);
+  };
+
+  p.draw = function() {
+    p.fill(255, 0, 0);
+    p.ellipse(p.width/2, p.height/2, 50, 50);
+  };
+});
+</script>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
