@@ -10,14 +10,34 @@
     ]
   },
   {
+    "objectID": "reading.html",
+    "href": "reading.html",
+    "title": "1  Reading List",
+    "section": "",
+    "text": "1.1 Prolog",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Reading List</span>"
+    ]
+  },
+  {
+    "objectID": "reading.html#prolog",
+    "href": "reading.html#prolog",
+    "title": "1  Reading List",
+    "section": "",
+    "text": "some books\nother stuff",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Reading List</span>"
+    ]
+  },
+  {
     "objectID": "prolog/intro.html",
     "href": "prolog/intro.html",
-    "title": "1  Introduction",
+    "title": "2  Introduction",
     "section": "",
     "text": "1\n2\n\n\n\n\n1. Logic Programming with Prolog. (Springer London, London, 2005). doi:10.1007/1-84628-212-8.\n\n\n2. Spivey, J. M. & Spivey, J. M. An Introduction to Logic Programming Through Prolog. (Prentice Hall, London, 1996).",
     "crumbs": [
       "Prolog",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
     ]
   }
 ]
