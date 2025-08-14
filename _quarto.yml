@@ -12,6 +12,7 @@ book:
       chapters:
       - prolog/intro.qmd
   page-navigation: true
+  downloads: pdf
 
 bibliography: references.bib
 

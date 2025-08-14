@@ -3,3 +3,57 @@
 This is a Quarto book.
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
+
+
+## Two points define a line
+
+In HTML, drag the points; in PDF, see the static figure.
+
+::: {.content-visible when-format="html"}
+::: {.content-visible when-format="html"}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph@1.8.0/distrib/jsxgraph.css">
+<script src="https://cdn.jsdelivr.net/npm/jsxgraph@1.8.0/distrib/jsxgraphcore.js"></script>
+
+<div id="jxg" class="jxgbox" style="width:420px;height:320px"></div>
+<script>
+  const brd = JXG.JSXGraph.initBoard('jxg', { boundingbox: [-5,5,5,-5], axis: true });
+  const A = brd.create('point', [1,2], { name: 'A' });
+  const B = brd.create('point', [-2,-1], { name: 'B' });
+  brd.create('line', [A, B]);
+</script>
+:::
+
+::: {.content-visible when-format="pdf"}
+![](figs/line-demo.png){fig-cap="Line through A and B."}
+:::
+
+:::
+
+
+
+## My First p5.js Sketch
+
+::: {=html}
+<!-- p5.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.min.js"></script>
+
+<!-- Container for the sketch -->
+<div id="p5-container"></div>
+
+<script>
+// p5.js sketch as an inline instance mode
+new p5(function(p) {
+  p.setup = function() {
+    let canvas = p.createCanvas(400, 200);
+    canvas.parent("p5-container"); // attach to our div
+    p.background(220);
+  };
+
+  p.draw = function() {
+    p.fill(255, 0, 0);
+    p.ellipse(p.width/2, p.height/2, 50, 50);
+  };
+});
+</script>
+:::
+
